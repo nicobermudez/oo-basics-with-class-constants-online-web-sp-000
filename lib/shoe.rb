@@ -13,8 +13,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    BRANDS.include?(brand) ? nil : BRANDS << brand
-    BRANDS.compact
+    BRANDS << brand
   end
 
 end
